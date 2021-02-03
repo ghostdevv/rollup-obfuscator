@@ -1,6 +1,6 @@
-import { obfuscate } from 'javascript-obfuscator';
+const { obfuscate } = require('javascript-obfuscator');
 
-export default function obfuscator(options = {}) {
+module.exports = function obfuscator(options = {}) {
     return {
         name: 'obfuscator',
 
@@ -15,4 +15,4 @@ export default function obfuscator(options = {}) {
             };
         },
     };
-}
+};
