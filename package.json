@@ -1,0 +1,35 @@
+{
+  "name": "rollup-obfuscator",
+  "version": "0.0.0",
+  "description": "A plugin to obfuscate javascript for rollup based on https://www.npmjs.com/javascript-obfuscator",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "license": "MIT",
+  "keywords": [
+    "obfuscator",
+    "rollup",
+    "rollup obfuscator",
+    "rollup plugin",
+    "plugin",
+    "rollup plugin obfuscator",
+    "rollup-obfuscator",
+    "javascript obfuscator"
+  ],
+  "homepage": "https://github.com/ghoststools/rollup-obfuscator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghoststools/rollup-obfuscator"
+  },
+  "bugs": {
+    "url": "https://github.com/ghoststools/rollup-obfuscator"
+  },
+  "dependencies": {
+    "javascript-obfuscator": "^2.x"
+  }
+}
