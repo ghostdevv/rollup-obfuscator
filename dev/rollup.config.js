@@ -1,10 +1,10 @@
 import obfuscator from 'rollup-obfuscator';
 
 export default {
-    input: 'dev/index.js',
+    input: 'dev/src/index.js',
 
     output: {
-        file: 'dev/output.js',
+        file: 'dev/src/output.js',
     },
 
     plugins: [obfuscator()],
