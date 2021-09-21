@@ -16,6 +16,11 @@
   "scripts": {
     "dev": "rollup -w -c dev/rollup.config.js"
   },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist"
+  ],
   "devDependencies": {
     "nodemon": "^2.0.7",
     "rollup": "^2.38.4"
