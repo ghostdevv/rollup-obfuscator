@@ -2,19 +2,17 @@
   "name": "rollup-obfuscator",
   "version": "1.0.1",
   "description": "A plugin to obfuscate javascript for rollup based on https://www.npmjs.com/javascript-obfuscator",
-  "main": "./src/index.cjs",
-  "module": "./src/index.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "exports": {
-      ".": [
-          {
-              "require": "./src/index.cjs",
-              "import": "./src/index.mjs"
-          },
-          "./src/index.cjs"
-      ]
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
   },
   "scripts": {
-    "dev": "rollup -w -c dev/rollup.config.js"
+    "dev": "rollup -w -c dev/rollup.config.js",
+    "build": "tsup-node"
   },
   "files": [
     "README.md",
@@ -22,8 +20,11 @@
     "dist"
   ],
   "devDependencies": {
+    "@types/node": "^16.9.4",
     "nodemon": "^2.0.7",
-    "rollup": "^2.38.4"
+    "rollup": "^2.38.4",
+    "tsup": "^5.1.0",
+    "typescript": "^4.4.3"
   },
   "license": "MIT",
   "keywords": [

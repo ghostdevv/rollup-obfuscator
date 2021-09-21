@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "esnext",
+        "outDir": "dist/esm",
+        "lib": ["ES2020"],
+
+        "strict": true,
+        "declaration": true,
+        "strictNullChecks": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node"
+    },
+    "include": ["src/**/*.ts"]
+}
