@@ -32,13 +32,13 @@
     "rollup-obfuscator",
     "javascript obfuscator"
   ],
-  "homepage": "https://github.com/ghoststools/rollup-obfuscator",
+  "homepage": "https://github.com/ghostdevv/rollup-obfuscator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ghoststools/rollup-obfuscator"
+    "url": "https://github.com/ghostdevv/rollup-obfuscator"
   },
   "bugs": {
-    "url": "https://github.com/ghoststools/rollup-obfuscator"
+    "url": "https://github.com/ghostdevv/rollup-obfuscator"
   },
   "dependencies": {
     "javascript-obfuscator": "^2.x"
