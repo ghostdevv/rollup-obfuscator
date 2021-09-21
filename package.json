@@ -14,8 +14,7 @@
       ]
   },
   "scripts": {
-    "dev": "nodemon .",
-    "test": "rollup -c test/rollup.config.js"
+    "dev": "rollup -w -c dev/rollup.config.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.7",
