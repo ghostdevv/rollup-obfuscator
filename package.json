@@ -2,8 +2,9 @@
   "name": "rollup-obfuscator",
   "version": "1.0.1",
   "description": "A plugin to obfuscate javascript for rollup based on https://www.npmjs.com/javascript-obfuscator",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
