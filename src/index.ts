@@ -8,10 +8,10 @@ export default function obfuscator(options: ObfuscatorOptions = {}): Plugin {
 
         transform: (code) => {
             const obfuscated = obfuscate(code, options);
-            
+
             return {
                 code: obfuscated.getObfuscatedCode(),
-                
+
                 map:
                     options.sourceMap && options.sourceMapMode != 'inline'
                         ? obfuscated.getSourceMap()
