@@ -50,6 +50,6 @@
     "url": "https://github.com/ghostdevv/rollup-obfuscator"
   },
   "dependencies": {
-    "javascript-obfuscator": "^3.x"
+    "javascript-obfuscator": "^4.x"
   }
 }
