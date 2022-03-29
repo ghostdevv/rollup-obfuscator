@@ -35,5 +35,17 @@ export function obfuscator(options: PluginOptions = {}): Plugin {
                 map: obfuscated.getSourceMap(),
             };
         },
+
+        renderChunk: (code, { fileName }) => {
+            const obfuscated = obfuscate(code, {
+                ...options,
+                inputFileName: fileName,
+            });
+
+            return {
+                code: obfuscated.getObfuscatedCode(),
+                map: obfuscated.getSourceMap(),
+            };
+        },
     };
 }
