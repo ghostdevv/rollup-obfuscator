@@ -1,4 +1,4 @@
-import obfuscator from 'rollup-obfuscator';
+import { obfuscator } from 'rollup-obfuscator';
 
 export default {
     input: 'dev/src/index.js',
