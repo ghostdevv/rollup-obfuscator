@@ -32,7 +32,11 @@ export function obfuscator(options: PluginOptions = {}): Plugin {
 
             return {
                 code: obfuscated.getObfuscatedCode(),
-                map: obfuscated.getSourceMap(),
+
+                map:
+                    options.sourceMap && options.sourceMapMode != 'inline'
+                        ? obfuscated.getSourceMap()
+                        : undefined,
             };
         },
 
@@ -44,7 +48,11 @@ export function obfuscator(options: PluginOptions = {}): Plugin {
 
             return {
                 code: obfuscated.getObfuscatedCode(),
-                map: obfuscated.getSourceMap(),
+
+                map:
+                    options.sourceMap && options.sourceMapMode != 'inline'
+                        ? obfuscated.getSourceMap()
+                        : undefined,
             };
         },
     };
