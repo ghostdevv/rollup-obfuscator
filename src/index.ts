@@ -1,7 +1,7 @@
 import type { ObfuscatorOptions } from 'javascript-obfuscator';
 import type { FilterPattern } from '@rollup/pluginutils';
 import { createFilter } from '@rollup/pluginutils';
-import { obfuscate } from 'javascript-obfuscator';
+import Obfuscator from 'javascript-obfuscator';
 import type { Plugin } from 'rollup';
 
 interface PluginOptions extends ObfuscatorOptions {
@@ -25,7 +25,7 @@ export function obfuscator(options: PluginOptions = {}): Plugin {
         transform: (code, id) => {
             if (!filter(id)) return;
 
-            const obfuscated = obfuscate(code, {
+            const obfuscated = Obfuscator.obfuscate(code, {
                 ...options,
                 inputFileName: id,
             });
@@ -41,7 +41,7 @@ export function obfuscator(options: PluginOptions = {}): Plugin {
         },
 
         renderChunk: (code, { fileName }) => {
-            const obfuscated = obfuscate(code, {
+            const obfuscated = Obfuscator.obfuscate(code, {
                 ...options,
                 inputFileName: fileName,
             });
