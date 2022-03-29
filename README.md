@@ -25,12 +25,20 @@ plugins: [
 ```
 
 # Config
-All config options can be found [here](https://www.npmjs.com/package/javascript-obfuscator) and are passed into the obfuscator plugin like this
+
+All config options can be found [here](https://www.npmjs.com/package/javascript-obfuscator) and are passed into the obfuscator plugin like this:
+
 ```js
 obfuscator({
     // options
 })
 ```
+
+You can also pass in the following additional options:
+
+- `include` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. By default only allows js files
+
+- `exclude` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to exclude.
 
 # Support
 
