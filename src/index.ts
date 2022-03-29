@@ -11,11 +11,7 @@ export function obfuscator(options: ObfuscatorOptions = {}): Plugin {
 
             return {
                 code: obfuscated.getObfuscatedCode(),
-
-                map:
-                    options.sourceMap && options.sourceMapMode != 'inline'
-                        ? obfuscated.getSourceMap()
-                        : undefined,
+                map: obfuscated.getSourceMap(),
             };
         },
     };
