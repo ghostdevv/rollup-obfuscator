@@ -11,7 +11,7 @@ interface PluginOptions extends ObfuscatorOptions {
 
 const defaults: PluginOptions = {
     include: ['**/*.js', '**/*.ts'],
-    exclude: [],
+    exclude: ['node_modules/**'],
 };
 
 export function obfuscator(options: PluginOptions = {}): Plugin {
