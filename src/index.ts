@@ -23,7 +23,7 @@ export function obfuscator(options: PluginOptions = {}): Plugin {
         name: 'obfuscator',
 
         transform: (code, id) => {
-            if (!filter(id)) return;
+            if (!filter(id)) return null;
 
             const obfuscated = Obfuscator.obfuscate(code, {
                 ...options,
