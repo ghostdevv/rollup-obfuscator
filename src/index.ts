@@ -10,7 +10,7 @@ interface PluginOptions extends ObfuscatorOptions {
 }
 
 const defaults: PluginOptions = {
-    include: ['**/*.js'],
+    include: ['**/*.js', '**/*.ts'],
     exclude: [],
 };
 
