@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/npm/v/rollup-obfuscator?label=Latest%20Version&style=for-the-badge&logo=npm&color=informational)](https://www.npmjs.com/package/rollup-obfuscator)
 
-A plugin to obfuscate javascript for rollup based on [javascript-obfuscator](https://www.npmjs.com/javascript-obfuscator)
+A plugin to obfuscate javascript for rollup & vite based on [javascript-obfuscator](https://www.npmjs.com/javascript-obfuscator)
 
 # Install
 

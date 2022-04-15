@@ -1,7 +1,7 @@
 {
   "name": "rollup-obfuscator",
   "version": "3.0.0",
-  "description": "A plugin to obfuscate javascript for rollup based on https://www.npmjs.com/javascript-obfuscator",
+  "description": "A plugin to obfuscate javascript for rollup & vite based on https://www.npmjs.com/javascript-obfuscator",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -39,7 +39,10 @@
     "plugin",
     "rollup plugin obfuscator",
     "rollup-obfuscator",
-    "javascript obfuscator"
+    "javascript obfuscator",
+    "vite obfuscator",
+    "vite",
+    "vite-obfuscator"
   ],
   "homepage": "https://github.com/ghostdevv/rollup-obfuscator",
   "repository": {
