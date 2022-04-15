@@ -36,9 +36,11 @@ obfuscator({
 
 You can also pass in the following additional options:
 
-- `include` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. By default only allows js/ts files
+- `global` - It's recommended to keep this enabled, since it might cause issues. However if you need access to `include` and `exclude` options you can disable this
 
-- `exclude` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to exclude. By default ignores node_modules
+- `include` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. By default only allows js/ts files - only works with global set to false
+
+- `exclude` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to exclude. By default ignores node_modules - only works with global set to false
 
 # Support
 
