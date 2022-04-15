@@ -51,6 +51,6 @@
   },
   "dependencies": {
     "@rollup/pluginutils": "^4.2.0",
-    "javascript-obfuscator": "^3.x"
+    "javascript-obfuscator": "^2.19.1"
   }
 }
