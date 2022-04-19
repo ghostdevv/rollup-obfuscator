@@ -1,7 +1,7 @@
 {
   "name": "rollup-obfuscator",
-  "version": "2.1.2",
-  "description": "A plugin to obfuscate javascript for rollup based on https://www.npmjs.com/javascript-obfuscator",
+  "version": "3.0.0",
+  "description": "A plugin to obfuscate javascript for rollup & vite based on https://www.npmjs.com/javascript-obfuscator",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -23,12 +23,12 @@
     "dist"
   ],
   "devDependencies": {
-    "@types/node": "^17.0.0",
-    "nodemon": "^2.0.7",
+    "@types/node": "^17.0.25",
+    "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
-    "rollup": "^2.38.4",
-    "tsup": "^5.1.0",
-    "typescript": "^4.4.3"
+    "rollup": "^2.70.2",
+    "tsup": "^5.12.5",
+    "typescript": "^4.6.3"
   },
   "license": "MIT",
   "keywords": [
@@ -39,7 +39,10 @@
     "plugin",
     "rollup plugin obfuscator",
     "rollup-obfuscator",
-    "javascript obfuscator"
+    "javascript obfuscator",
+    "vite obfuscator",
+    "vite",
+    "vite-obfuscator"
   ],
   "homepage": "https://github.com/ghostdevv/rollup-obfuscator",
   "repository": {
@@ -50,7 +53,7 @@
     "url": "https://github.com/ghostdevv/rollup-obfuscator"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^4.2.0",
-    "javascript-obfuscator": "^2.19.1"
+    "@rollup/pluginutils": "^4.2.1",
+    "javascript-obfuscator": "^4.0.0"
   }
 }
