@@ -9,7 +9,7 @@ interface ObfuscatorPluginOptions extends ObfuscatorOptions {
      * It's recommended to keep this enabled, since it might cause issues. However if you need access to `include` and `exclude` options you can disable this
      * @default true
      */
-    global: boolean;
+    global?: boolean;
 
     /**
      * A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. By default only allows js/ts files.
@@ -31,6 +31,10 @@ export function obfuscator(
         options.include || ['**/*.js', '**/*.ts'],
         options.exclude || ['node_modules/**'],
     );
+
+    if (options.global != true && options.global != false) {
+        options.global = true;
+    }
 
     return {
         name: 'obfuscator',
