@@ -1,6 +1,6 @@
 {
   "name": "rollup-obfuscator",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A plugin to obfuscate javascript for rollup & vite based on https://www.npmjs.com/javascript-obfuscator",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
