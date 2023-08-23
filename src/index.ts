@@ -34,7 +34,12 @@ export function obfuscator(options: RollupObfuscatorOptions = {}): Plugin {
         name: 'obfuscator',
 
         transform(code, id) {
-            if (!filter(id)) return null;
+            if (!filter(id)) {
+                this?.debug(`[rollup-obfuscator] Ignoring "${id}"`);
+                return null;
+            }
+
+            this?.debug(`[rollup-obfuscator] Obfuscating "${id}"`);
 
             const result = Obfuscator.obfuscate(code, {
                 stringArray: false,
