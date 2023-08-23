@@ -7,14 +7,12 @@ import type { Plugin } from 'rollup';
 export interface RollupObfuscatorOptions extends ObfuscatorOptions {
     /**
      * A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. By default only allows js/ts files.
-     * Only works with global set to false
      * @default ['**\/*.js', '**\/*.ts']
      */
     include?: FilterPattern;
 
     /**
      * A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to exclude. By default ignores node_modules.
-     * Only works with global set to false
      * @default ['node_modules\/**']
      */
     exclude?: FilterPattern;
