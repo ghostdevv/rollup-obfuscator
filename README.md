@@ -2,11 +2,11 @@
 
 [![](https://img.shields.io/npm/v/rollup-obfuscator?label=Latest%20Version&style=for-the-badge&logo=npm&color=informational)](https://www.npmjs.com/package/rollup-obfuscator)
 
-A plugin to obfuscate javascript for rollup & vite based on [javascript-obfuscator](https://www.npmjs.com/javascript-obfuscator)
+A rollup/vite plugin to obfuscate your code based on [javascript-obfuscator](https://www.npmjs.com/javascript-obfuscator)
 
 # Install
 
-```
+```bash
 npm install -D rollup-obfuscator
 ```
 
@@ -42,7 +42,12 @@ You can also pass in the following additional options:
 
 - `exclude` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to exclude. By default ignores node_modules - only works with global set to false
 
+# I get an error after runing obfuscated code
+
+It's quite common to see errors after running obfuscated code. The obfuscation changes it so much that you're bound to see errors, especailly if your codebase is complex. I would recommend playing with the config and try relaxing your settings, if that still doesn't work file an issue on [GitHub](https://github.com/ghostdevv/rollup-obfuscator).
+
+
 # Support
 
 -   Join the [discord](https://discord.gg/2Vd4wAjJnm)
--   Create a issue on the [github](https://github.com/ghostdevv/rollup-obfuscator)
+-   Create a issue on the [GitHub](https://github.com/ghostdevv/rollup-obfuscator)
