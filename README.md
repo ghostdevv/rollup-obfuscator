@@ -4,48 +4,62 @@
 
 A rollup/vite plugin to obfuscate your code based on [javascript-obfuscator](https://www.npmjs.com/javascript-obfuscator)
 
-# Install
+# Installing
+
+First install the plugin as a dev dependency:
 
 ```bash
-npm install -D rollup-obfuscator
+npm install rollup-obfuscator -D
 ```
 
-# Use
+Next we should add it to the **end** of the plugins array:
 
+Rollup:
 ```js
 import { obfuscator } from 'rollup-obfuscator';
 
-...
-plugins: [
-    ...
-    obfuscator()
-    ...
-]
-...
+export default {
+    plugins: [
+        // ...
+        obfuscator()
+    ]
+}
 ```
 
-# Config
-
-All config options can be found [here](https://www.npmjs.com/package/javascript-obfuscator) and are passed into the obfuscator plugin like this:
-
+Vite:
 ```js
-obfuscator({
-    // options
+import { obfuscator } from 'rollup-obfuscator';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    plugins: [
+        // ...
+        obfuscator()
+    ]
 })
 ```
 
-You can also pass in the following additional options:
+## Configuring
 
-- `global` - It's recommended to keep this enabled, since it might cause issues. However if you need access to `include` and `exclude` options you can disable this
+The plugin should hopefully work out of the box. However, it's likely to break on larger applications - especially those that use complex frameworks. You should play with the options to find what works best for your application.
 
-- `include` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. By default only allows js/ts files - only works with global set to false
+```js
+plugins: [
+    obfuscator({
+        // options go here
+    })
+]
+```
 
-- `exclude` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to exclude. By default ignores node_modules - only works with global set to false
+### Obfuscator Options
 
-# I get an error after runing obfuscated code
+All config options can be found [here](https://www.npmjs.com/package/javascript-obfuscator). The plugin has the same default options, except setting `sourceMap: true` and `stringArray: false`.
 
-It's quite common to see errors after running obfuscated code. The obfuscation changes it so much that you're bound to see errors, especailly if your codebase is complex. I would recommend playing with the config and try relaxing your settings, if that still doesn't work file an issue on [GitHub](https://github.com/ghostdevv/rollup-obfuscator).
+### Plugin Specific Options
 
+- `include` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. Defaults to `['**/*.js', '**/*.ts']`
+
+- `exclude` - A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to exclude. Defaults to `['node_modules/**']`
 
 # Support
 
