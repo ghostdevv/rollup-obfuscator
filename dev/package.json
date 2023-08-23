@@ -5,6 +5,7 @@
         "dev": "rollup -w -c"
     },
     "devDependencies": {
+        "javascript-obfuscator": "^4.0.2",
         "rollup": "^3.28.1",
         "rollup-obfuscator": "file:.."
     }

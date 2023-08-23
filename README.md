@@ -4,6 +4,12 @@
 
 A rollup/vite plugin to obfuscate your code based on [javascript-obfuscator](https://www.npmjs.com/javascript-obfuscator)
 
+# Requirements
+
+- Rollup: v2 or v3
+- Node: v16+
+- javascript-obfuscator: v4
+
 # Installing
 
 First install the plugin as a dev dependency:

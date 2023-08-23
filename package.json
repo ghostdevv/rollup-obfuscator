@@ -37,6 +37,12 @@
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
   },
+  "peerDependencies": {
+    "javascript-obfuscator": "^4.0.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.0.3"
+  },
   "license": "MIT",
   "keywords": [
     "obfuscator",
@@ -58,9 +64,5 @@
   },
   "bugs": {
     "url": "https://github.com/ghostdevv/rollup-obfuscator"
-  },
-  "dependencies": {
-    "@rollup/pluginutils": "^5.0.3",
-    "javascript-obfuscator": "^4.0.2"
   }
 }
