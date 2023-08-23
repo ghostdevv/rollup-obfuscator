@@ -1,5 +1,4 @@
-function hello() {
-    return 'hello world';
+function hi() {
+    console.log('Hello World!');
 }
-
-console.log(hello());
+export { hi };
