@@ -1,3 +1,4 @@
 node_modules
-dev/**/output.js
+output.js
+output.js.map
 dist

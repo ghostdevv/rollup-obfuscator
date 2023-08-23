@@ -1,11 +1,17 @@
 import { obfuscator } from 'rollup-obfuscator';
 
-export default {
-    input: 'dev/src/index.js',
+/** @type {import('rollup').RollupOptions} */
+const options = {
+	input: './src/index.js',
 
-    output: {
-        file: 'dev/src/output.js',
-    },
+	logLevel: 'debug',
 
-    plugins: [obfuscator()],
+	output: {
+		sourcemap: true,
+		file: './src/output.js',
+	},
+
+	plugins: [obfuscator()],
 };
+
+export default options;
