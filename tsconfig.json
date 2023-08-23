@@ -1,9 +1,8 @@
 {
     "compilerOptions": {
-        "target": "es2019",
-        "module": "esnext",
-        "outDir": "dist/esm",
-        "lib": ["ES2020"],
+        "target": "ES2021",
+        "module": "es2022",
+        "lib": ["ES2021"],
 
         "strict": true,
         "declaration": true,
