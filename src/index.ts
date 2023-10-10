@@ -30,6 +30,8 @@ export function obfuscator(options: RollupObfuscatorOptions = {}): Plugin {
 
 	return {
 		name: 'obfuscator',
+		apply: 'build',
+		enforce: 'post',
 
 		transform(code, id) {
 			if (!filter(id)) {
