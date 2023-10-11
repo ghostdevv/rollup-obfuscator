@@ -4,6 +4,11 @@ import { createFilter } from '@rollup/pluginutils';
 import Obfuscator from 'javascript-obfuscator';
 import type { Plugin } from 'rollup';
 
+interface ObfuscatorPlugin extends Plugin {
+	apply?: 'build' | 'serve';
+	enforce?: 'pre' | 'post';
+}
+
 export interface RollupObfuscatorOptions extends ObfuscatorOptions {
 	/**
 	 * A [FilterPattern](https://github.com/rollup/plugins/blob/master/packages/pluginutils/types/index.d.ts#L23) of files to include. By default only allows js/ts files.
@@ -18,7 +23,7 @@ export interface RollupObfuscatorOptions extends ObfuscatorOptions {
 	exclude?: FilterPattern;
 }
 
-export function obfuscator(options: RollupObfuscatorOptions = {}): Plugin {
+export function obfuscator(options: RollupObfuscatorOptions = {}): ObfuscatorPlugin {
 	const {
 		include = ['**/*.js', '**/*.ts'],
 		exclude = ['node_modules/**'],
