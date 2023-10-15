@@ -6,6 +6,6 @@
     },
     "devDependencies": {
         "rollup": "^3.28.1",
-        "rollup-obfuscator": "file:.."
+        "rollup-obfuscator": "workspace:*"
     }
 }
