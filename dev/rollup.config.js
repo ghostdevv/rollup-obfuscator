@@ -1,14 +1,15 @@
 import { obfuscator } from 'rollup-obfuscator';
+import { join } from 'desm';
 
 /** @type {import('rollup').RollupOptions} */
 const options = {
-	input: './src/index.js',
+	input: join(import.meta.url, './src/index.js'),
 
 	logLevel: 'debug',
 
 	output: {
 		sourcemap: true,
-		file: './src/output.js',
+		file: join(import.meta.url, './src/output.js'),
 	},
 
 	plugins: [obfuscator()],
