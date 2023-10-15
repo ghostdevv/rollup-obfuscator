@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:tsup": "tsup-node --watch",
-    "dev:rollup": "rollup -w -c dev/rollup.config.js",
+    "dev:rollup": "pnpm --filter dev-env -r dev",
     "build": "tsup-node"
   },
   "files": [

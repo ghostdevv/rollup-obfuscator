@@ -1,4 +1,5 @@
 {
+    "name": "dev-env",
     "type": "module",
     "private": true,
     "scripts": {
