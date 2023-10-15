@@ -33,6 +33,10 @@ export default {
 ```
 
 Vite:
+
+> [!NOTE]
+> This will only apply at build time
+
 ```js
 import { obfuscator } from 'rollup-obfuscator';
 import { defineConfig } from 'vite';
