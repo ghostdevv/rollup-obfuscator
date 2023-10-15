@@ -6,7 +6,7 @@ A rollup/vite plugin to obfuscate your code based on [javascript-obfuscator](htt
 
 # Requirements
 
-- Rollup: v2 or v3
+- Rollup: v2, v3, or v4
 - Node: v16+
 - javascript-obfuscator: v4
 
