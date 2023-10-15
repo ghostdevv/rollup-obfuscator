@@ -73,7 +73,7 @@ All config options can be found [here](https://www.npmjs.com/package/javascript-
 
 # Migrate to v4
 
-v4 of this plugin now requires a minimum Node version of v16, it may still work on older versions but it isn't tested. `options.global` was removed and is effectively no longer the default, some issues came up that made it no longer make sense. Finally a few obfuscator option defaults were changed to: `stringArray: false`, `sourceMap: true`. If you're project doesn't work with v4 please let me know why by [creating an issue](https://github.com/ghostdevv/rollup-obfuscator/issues/new). You can see the [full code changes here](https://github.com/ghostdevv/rollup-obfuscator/compare/v3.0.2...v4.0.0).
+v4 of this plugin now requires a minimum Node version of v16, it may still work on older versions but it isn't tested. `options.global` was removed and is now follows v3's `global: false` behaviour, some issues came up that made it no longer make sense. Finally a few obfuscator option defaults were changed to: `stringArray: false`, `sourceMap: true`. If you're project doesn't work with v4 please let me know why by [creating an issue](https://github.com/ghostdevv/rollup-obfuscator/issues/new). You can see the [full code changes here](https://github.com/ghostdevv/rollup-obfuscator/compare/v3.0.2...v4.0.0).
 
 # Support
 
