@@ -40,11 +40,11 @@ export function obfuscator(options: RollupObfuscatorOptions = {}): ObfuscatorPlu
 
 		transform(code, id) {
 			if (!filter(id)) {
-				this?.debug(`[rollup-obfuscator] Ignoring "${id}"`);
+				this.debug?.(`[rollup-obfuscator] Ignoring "${id}"`);
 				return null;
 			}
 
-			this?.debug(`[rollup-obfuscator] Obfuscating "${id}"`);
+			this.debug?.(`[rollup-obfuscator] Obfuscating "${id}"`);
 
 			const result = Obfuscator.obfuscate(code, {
 				stringArray: false,
